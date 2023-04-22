@@ -1,0 +1,374 @@
+.question {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 150px 0;
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+}
+
+.question__bloks {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 300px;
+  justify-content: center;
+  align-items: center;
+}
+
+.question__flower {
+  width: 450px;
+  height: 1000px;
+}
+
+.question__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 40%;
+  margin: 0;
+}
+
+.question__header {
+  height: 130px;
+  object-fit: contain;
+}
+
+.question__text {
+  font-size: 30px;
+  line-height: 37px;
+  margin: 30px 0 0;
+  width: 100%;
+}
+
+.question__text-span {
+  font-size: 20px;
+  line-height: 37px;
+  margin: 30px 0 0;
+}
+
+.question__form {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0 0;
+}
+
+.question__string {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 30px;
+  border: none;
+  font-size: 30px;
+  align-items: flex-start;
+  padding: 0;
+}
+
+.question__label {
+  margin: 20px 0 0 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.question__label-input {
+  margin: 0 0 20px 0;
+  text-align: start;
+}
+
+.question__text-span {
+  font-size: 24px;
+  line-height: 37px;
+  margin: 0;
+}
+
+.question__input {
+  width: 550px;
+  height: 55px;
+  border-radius: 3.5px;
+  border: .5px solid #666766;
+  font-size: 30px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.question__button {
+  width: 300px;
+  height: 65px;
+  background-color: #666766;
+  font-size: 24px;
+  border: none;
+  align-self: center;
+  border-radius: 3.5px;
+  cursor: pointer;
+  color: white;
+  font-weight: 200;
+}
+
+.question__button:disabled {
+  opacity: .7;
+}
+
+.question__unvisible {
+  font-family: inherit;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(0 0 0 0);
+}
+
+.question__visible-radio {
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.645);
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.question__unvisible:checked + .question__visible-radio {
+  background-color: #2f6f4c;
+}
+
+.question__unvisible:disabled + .question__visible-radio {
+  border: 1px solid #2f6f4c;
+  background-color: #fbf8ec;
+}
+
+.question__unvisible:disabled:checked+ .question__visible-radio {
+  background-color: #fbf8ec;
+}
+
+.question__unvisible:focus + .question__visible-radio {
+    box-shadow: 0 0 5px #f8f7f0;
+}
+
+.question__visible-checkbox {
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.645);
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.question__unvisible:checked + .question__visible-checkbox {
+  background-color: #2f6f4c;
+}
+
+.question__unvisible:disabled + .question__visible-checkbox {
+  border: 1px solid #2f6f4c;
+  background-color: #fbf8ec;
+}
+
+.question__unvisible:disabled:checked+ .question__visible-checkbox {
+  background-color: #fbf8ec;
+}
+
+.question__unvisible:focus + .question__visible-checkbox {
+  box-shadow: 0 0 5px #f8f7f0;
+}
+
+@media screen and (max-width: 1700px) {
+  .question {
+    padding: 100px 0 0;
+  }
+
+  .question__bloks {
+    gap: 150px;
+  }
+
+  .question__container {
+    max-width: 50%;
+  }
+
+  .question__header {
+    height: 110px;
+  }
+
+  .question__flower {
+    width: 350px;
+    height: 900px;
+  }
+
+  .question__text {
+    font-size: 26px;
+    line-height: 33px;
+    margin: 25px 0 0;
+  }
+
+  .question__form {
+    margin: 40px 0 60px;
+  }
+
+  .question__text-span {
+    font-size: 20px;
+    line-height: 33px;
+  }
+
+  .question__string {
+    margin: 0 0 20px;
+    font-size: 22px;
+  }
+
+  .question__label {
+    margin: 10px 0 0 0;
+  }
+
+  .question__label-input {
+    margin: 0 0 15px 0;
+  }
+
+  .question__input {
+    padding: 7px;
+    width: 400px;
+    font-size: 22px;
+  }
+
+  .question__button {
+    font-size: 24px;
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .question {
+    padding: 80px 0;
+  }
+
+  .question__flower {
+    width: 210px;
+    height: 500px;
+  }
+
+  .question__header {
+    height: 80px;
+  }
+
+  .question__text {
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .question__text-span {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .question__form {
+    margin: 40px 0 0;
+  }
+
+  .question__string {
+    margin: 0 0 20px;
+    font-size: 20px;
+    padding: 0;
+  }
+
+  .question__label {
+    margin: 10px 0 0;
+  }
+
+  .question__label-input {
+    margin: 0 0 10px 0;
+  }
+
+  .question__button {
+    width: 180px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .question__input {
+    font-size: 24px;
+    height: 45px;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .question {
+    padding: 60px 0;
+  }
+
+  .question__bloks {
+    width: 100%;
+    gap: 0;
+  }
+
+  .question__text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .question__container {
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .question__flower {
+    display: none;
+  }
+
+  .question__header {
+    height: 60px;
+  }
+
+  .question__text {
+    font-size: 18px;
+    line-height: 23px;
+    width: 80%;
+    margin: 20px 0 0;
+  }
+
+  .question__text-span {
+    font-size: 16px;
+    line-height: 23px;
+  }
+
+  .question__visible-radio {
+    width: 10px;
+    height: 10px;
+  }
+
+  .question__visible-checkbox {
+    width: 10px;
+    height: 10px;
+  }
+
+  .question__form {
+    margin: 30px 0 0;
+  }
+
+  .question__string {
+    margin: 0 0 15px;
+    font-size: 18px;
+  }
+
+  .question__label {
+    margin: 10px 0 0;
+  }
+
+  .question__input {
+    height: 45px;
+    font-size: 16px;
+    width: 270px;
+  }
+
+  .question__label-input {
+    width: 270px;
+  }
+
+  .question__button {
+    width: 155px;
+    height: 40px;
+    font-size: 16px;
+  }
+}

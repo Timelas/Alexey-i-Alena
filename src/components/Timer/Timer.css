@@ -1,0 +1,146 @@
+.timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 150px 0;
+  position: relative;
+}
+
+.timer__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.timer__title {
+  font-size: 28px;
+  line-height: 37px;
+}
+
+.timer__bloks {
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+  justify-content: space-between;
+}
+
+.timer__block-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 105px;
+}
+
+.timer__number {
+  font-size: 30px;
+  color: #f6eadf;
+  width: 72px;
+  height: 72px;
+  margin: 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  align-self: center;
+  justify-content: center;
+}
+
+.timer__number_var_day {
+  background-color: #707071;
+}
+
+.timer__number_var_hour {
+background-color: #aa9fa9;
+}
+
+.timer__number_var_min {
+background-color: #706e7c;
+}
+
+.timer__number_var_sec {
+background-color: #535f64;
+}
+
+.timer__text {
+  font-size: 28px;
+  margin: 10px 0 0;
+}
+
+@media screen and (max-width: 1700px) {
+  .timer {
+    padding: 80px 0 0;
+  }
+  
+  .timer__title {
+    font-size: 24px;
+    line-height: 27px;
+  }
+  
+  .timer__number {
+    font-size: 28px;
+  }
+
+  .timer__text {
+    font-size: 24px;
+    margin: 7px 0 0;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .timer {
+    padding: 60px 0 0;
+  }
+
+  .timer__title {
+    font-size: 20px;
+  }
+
+  .timer__text {
+    font-size: 18px;
+  }
+
+  .timer__number {
+    font-size: 20px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .timer__bloks {
+    gap: 7px;
+  }
+
+  .timer__block-info {
+    width: 80px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .timer {
+    padding: 40px 0 0;
+  }
+
+  .timer__title {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .timer__bloks {
+    gap: 7px;
+  }
+
+  .timer__number {
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .timer__text {
+    font-size: 16px;
+  }
+
+  .timer__block-info {
+    width: 55px;
+  }
+}

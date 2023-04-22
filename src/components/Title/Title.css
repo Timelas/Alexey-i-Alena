@@ -1,0 +1,108 @@
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  align-self: flex-start;
+  width: 100%;
+  height: 140px;
+}
+
+.title__header {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.title__title {
+  font-family: "Caravan", "Arial", sans-serif;
+  font-size: 120px;
+  font-weight: normal;
+  margin: 0;
+  line-height: 0.8;
+  align-self: flex-start;
+  text-align: start;
+  text-shadow: -.1px 0 black;
+}
+
+.title__figure {
+  background-image: url(../../images/figure.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: -80px;
+  left: 0;
+  width: 100px;
+  height: 300px;
+}
+
+.title__trait {
+  width: 27%;
+  height: 2px;
+  background-color: black;
+  margin: 0 50px 0 0;
+  z-index: 2;
+}
+
+@media screen and (max-width: 1700px) {
+  .title {
+    height: 120px;
+  }
+
+  .title__title {
+    font-size: 100px;
+  }
+
+  .title__figure {
+    top: -65px;
+    width: 90px;
+    height: 250px;
+  }
+
+  .title__trait {
+    margin: 0 40px 0 0;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .title {
+    height: 90px;
+  }
+
+  .title__title {
+    font-size: 70px;
+  }
+
+  .title__figure {
+    top: -55px;
+    width: 70px;
+    height: 200px;
+  }
+
+  .title__trait {
+    margin: 0 30px 0 0;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .title {
+    height: 80px;
+  }
+
+  .title__title {
+    font-size: 60px;
+    align-self: center;
+  }
+
+  .title__figure {
+    opacity: 0;
+  }
+
+  .title__trait {
+    height: 1px;
+    margin: 0 20px 0 0;
+  }
+}

@@ -1,0 +1,310 @@
+.info-date {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-date__invitation {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+}
+
+.info-date__who {
+  width: 600px;
+  object-fit: contain;
+  margin: 220px 0 100px;
+}
+
+.info-date__text {
+  font-size: 38px;
+  line-height: 60px;
+  margin: 0;
+}
+
+.info-date__info {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+  margin: calc(100vh / 6) 0 0;
+}
+
+.info-date__block-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.info-date__text_position_right {
+  text-align: end;
+  font-size: 34px;
+}
+
+.info-date__where_position_left {
+  width: min-content;
+}
+
+.info-date__hands {
+  height: 150px;
+  object-fit: contain;
+}
+
+.info-date__place {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.info-date__check-in {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 400px;
+  margin: 0;
+  position: relative;
+  width: 100%;
+  padding: 150px 0;
+  background-color: #fff;
+}
+
+.info-date__where {
+  height: 110px;
+  object-fit: contain;
+}
+
+.info-date__map {
+  margin: 0;
+  z-index: 3;
+}
+
+.info-date__with-map {
+  position: relative;
+  height: 600px;
+  margin: 0;
+  padding: 0;
+}
+
+.info-date__ball-map {
+  position: absolute;
+  top: 25px;
+  left: -250px;
+  height: 500px;
+  object-fit: contain;
+}
+
+.info-date__check-in_color_grey {
+  background-color: #eaeaea;
+}
+
+@media screen and (max-width: 1700px) {
+  .info-date__who {
+    width: 450px;
+    margin: 110px 0 30px;
+  }
+  
+  .info-date__text {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .info-date__text_position_right {
+    font-size: 24px;
+  }
+
+  .info-date__hands {
+  height: 105px;
+  }
+  
+  .info-date__check-in {
+    gap: 200px;
+    height: 100vh;
+    padding: 0;
+  }
+
+  .info-date__info {
+    gap: 30px;
+  }
+
+  .info-date__where {
+    height: 90px;
+  }
+
+  .info-date__map {
+    width: 400px;
+    height: 400px;
+  }
+
+  .info-date__with-map {
+    height: 400px;
+  }
+
+  .info-date__ball-map {
+    left: -175px;
+    top: 25px;
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .info-date__who {
+    width: 350px;
+    margin: 100px 0 40px;
+  }
+
+  .info-date__text {
+    font-size: 24px;
+    line-height: 35px;
+  }
+
+  .info-date__text_position_right {
+    font-size: 20px;
+  }
+
+  .info-date__hands {
+    height: 90px;
+  }
+  
+  .info-date__check-in {
+    gap: 170px;
+    padding: 0;
+  }
+
+  .info-date__map {
+    width: 350px;
+    height: 350px;
+  }
+
+  .info-date__with-map {
+    height: 350px;
+  }
+
+  .info-date__ball-map {
+    left: -150px;
+    top: 25px;
+    height: 300px;
+  }
+
+  .info-date__where {
+    height: 70px;
+  }
+}
+
+@media screen and (max-width: 1300px) and (orientation:portrait) {
+  .info-date__invitation {
+    max-height: 800px;
+  }
+
+  .info-date__info {
+    margin: 150px 0 0;
+  }
+
+  .info-date__check-in {
+    max-height: 800px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .info-date__who {
+    width: 300px;
+    margin: 90px 0 20px;
+  }
+
+  .info-date__text {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .info-date__text_position_right {
+    font-size: 18px;
+  }
+  
+  .info-date__hands {
+    height: 70px;
+  }
+  
+  .info-date__check-in {
+    gap: 150px;
+  }
+
+  .info-date__map {
+    width: 300px;
+    height: 300px;
+  }
+
+  .info-date__with-map {
+    height: 300px;
+  }
+
+  .info-date__ball-map {
+    left: -125px;
+    top: 25px;
+    height: 250px;
+  }
+
+  .info-date__where {
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .info-date__check-in {
+    flex-direction: column;
+    height: 100%;
+    padding: 70px 0;
+    gap: 40px;
+  }
+
+  .info-date__text_position_right {
+    text-align: end;
+    font-size: 16px;
+  }
+
+  .info-date__info {
+    flex-direction: column;
+    margin: 50px;
+    gap: 35px;
+    margin: calc(100vh / 6) 0 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .info-date__who {
+    width: 270px;
+    margin: 70px 0 20px;
+  }
+
+  .info-date__hands {
+    height: 90px;
+  }
+
+  .info-date__map {
+    width: 240px;
+    height: 240px;
+    transform: translateX(25px);
+  }
+
+  .info-date__map-left {
+    transform: translateX(-25px);
+  }
+
+  .info-date__with-map {
+    height: 240px;
+  }
+
+  .info-date__ball-map {
+    left: -65px;
+    height: 180px;
+  }
+
+  .info-date__info {
+    margin: calc(100vh / 5) 0 0;
+  }
+}

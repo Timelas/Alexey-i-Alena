@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "WonderGarden";
+  src: url(WonderGardenScript-Regular.ttf) format('ttf'),
+       url(WonderGardenScript-Regular.woff) format('woff'),
+       url(WonderGardenScript-Regular.woff2) format('woff');
+       font-style: normal;
+       font-weight: 200;
+}
+
+@font-face {
+  font-family: "Calisto";
+  src: url(Calisto.TTF) format('ttf'),
+       url(Calisto.woff) format('woff'),
+       url(Calisto.woff2) format('woff2');
+       font-style: normal;
+       font-weight: 200;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url(Gotham.ttf) format('ttf'),
+       url(Gotham.woff) format('woff'),
+       url(Gotham.woff2) format('woff2');
+       font-style: normal;
+       font-weight: 200;
+}
+
