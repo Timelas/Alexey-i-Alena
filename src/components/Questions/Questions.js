@@ -56,7 +56,7 @@ function Questions() {
                 <span className="question__text-span">Мясо</span>
               </label>
             </fieldset>
-            <fieldset className="question__string">Понадобится ли вам трансфер:
+            <fieldset className="question__string">Предпочтение по алкоголю:
               <label  htmlFor="strong" className="question__label">
                 <input className="question__unvisible" type="checkbox" name="Крепкий алкоголь" value="Крепкий алкоголь" id="strong"></input>
                 <span className="question__visible-checkbox"></span>
@@ -67,7 +67,7 @@ function Questions() {
                 <span className="question__visible-checkbox"></span>
                 <span className="question__text-span">Игристое вино</span>
               </label>
-              <label  htmlFor="sparkling" className="question__label">
+              <label  htmlFor="prosecco" className="question__label">
                 <input className="question__unvisible" type="checkbox" name="Просекко" value="Просекко" id="prosecco"></input>
                 <span className="question__visible-checkbox"></span>
                 <span className="question__text-span">Просекко</span>
@@ -87,10 +87,17 @@ function Questions() {
                 <span className="question__visible-checkbox"></span>
                 <span className="question__text-span">Безалкогольные напитки</span>
               </label>
+              <label htmlFor="red" className="question__label">
+                <input type="text" name="свой вариант" id="mine" className="question__input" placeholder="свой вариант"></input>
+              </label>
             </fieldset>
             <p className="question__string">
-              <label htmlFor="alco" className="question__label-input">Номер машины для оформления пропуска на парковку:</label>
-              <input type="text" name="Номер" id="number" required className="question__input"></input>
+              <label htmlFor="allergy" className="question__label-input">Есть ли у вас пищевая аллергия и на какие продукты:</label>
+              <input type="text" name="аллергия" id="allergy" className="question__input"></input>
+            </p>
+            <p className="question__string">
+              <label htmlFor="number" className="question__label-input">Номер машины для оформления пропуска на парковку:</label>
+              <input type="text" name="Номер" id="number" className="question__input"></input>
             </p>
             <button type="submit" className="question__button" disabled={loading ? true : false}>{loading ? "Отправка..." : "Подтвердить"}</button>
           </form> 

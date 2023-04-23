@@ -101,7 +101,7 @@
   background-color: #666766;
   font-size: 24px;
   border: none;
-  align-self: center;
+  align-self: flex-start;
   border-radius: 3.5px;
   cursor: pointer;
   color: white;
@@ -370,5 +370,6 @@
     width: 155px;
     height: 40px;
     font-size: 16px;
+    align-self: center;
   }
 }
