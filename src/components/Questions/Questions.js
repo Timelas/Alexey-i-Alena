@@ -5,7 +5,7 @@ import "./Questions.css";
 
 function Questions() {
   const formRef = useRef(null)
-  const scriptUrl = "https://script.google.com/macros/s/AKfycby_BYT6LzPV3FZHn66CPeQcYu6bE5b3ZBjuvAoU08L_RdiIzQ7viRTg5mtfej77Y_iK/exec"
+  const scriptUrl = "https://script.google.com/macros/s/AKfycbwrgBsAPIwlF1DaZe74S9WRqXuQo1gTypipM3ucgcLVPt6Xo7J8r8VhqhdKfS3JaX64dQ/exec"
   const [loading, setLoading] = useState(false);
   const [isFormVisible, setisFormVisible] = useState(true);
 
@@ -41,17 +41,17 @@ function Questions() {
             </p>
             <fieldset className="question__string">Предпочтения по еде:
               <label  htmlFor="chicken" className="question__label">
-                <input className="question__unvisible" type="radio" name="Еда" value="Курица" id="chicken"></input>
+                <input className="question__unvisible" type="radio" name="Предпочтения по еде" value="Курица" id="chicken"></input>
                 <span className="question__visible-radio"></span>
                 <span className="question__text-span">Курица</span>
               </label>
               <label htmlFor="fish" className="question__label">
-                <input className="question__unvisible" type="radio" name="Еда" value="Рыба" id="fish"></input>
+                <input className="question__unvisible" type="radio" name="Предпочтения по еде" value="Рыба" id="fish"></input>
                 <span className="question__visible-radio"></span>
                 <span className="question__text-span">Рыба</span>
               </label>
               <label htmlFor="meat" className="question__label">
-                <input className="question__unvisible" type="radio" name="Еда" value="Мясо" id="meat"></input>
+                <input className="question__unvisible" type="radio" name="Предпочтения по еде" value="Мясо" id="meat"></input>
                 <span className="question__visible-radio"></span>
                 <span className="question__text-span">Мясо</span>
               </label>
@@ -88,16 +88,16 @@ function Questions() {
                 <span className="question__text-span">Безалкогольные напитки</span>
               </label>
               <label htmlFor="red" className="question__label">
-                <input type="text" name="свой вариант" id="mine" className="question__input" placeholder="свой вариант"></input>
+                <input type="text" name="Свой вариант" id="mine" className="question__input"></input>
               </label>
             </fieldset>
             <p className="question__string">
               <label htmlFor="allergy" className="question__label-input">Есть ли у вас пищевая аллергия и на какие продукты:</label>
-              <input type="text" name="аллергия" id="allergy" className="question__input"></input>
+              <input type="text" name="Аллергия" id="allergy" className="question__input"></input>
             </p>
             <p className="question__string">
               <label htmlFor="number" className="question__label-input">Номер машины для оформления пропуска на парковку:</label>
-              <input type="text" name="Номер" id="number" className="question__input"></input>
+              <input type="text" name="Номер машины" id="number" className="question__input"></input>
             </p>
             <button type="submit" className="question__button" disabled={loading ? true : false}>{loading ? "Отправка..." : "Подтвердить"}</button>
           </form> 
