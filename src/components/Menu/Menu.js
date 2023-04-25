@@ -26,7 +26,7 @@ function Menu(props) {
             <li className="menu__link"><a href="#plan" className="menu__ancor">План дня</a></li>
             <li className="menu__link"><a href="#dresscode" className="menu__ancor">Дресс код</a></li>
             <li className="menu__link"><a href="#details" className="menu__ancor">Детали</a></li>
-            <li className="menu__link"><a href="#rsvp" className="menu__ancor">RSVP</a></li>
+            <li className="menu__link"><a href="#rsvp" className="menu__ancor">Обратная связь</a></li>
             <li className="menu__link"><a href="#questions" className="menu__ancor">Опрос</a></li>
           </ul>
         ) : (

@@ -115,6 +115,10 @@
     height: 60px;
   }
 
+  .menu__links {
+    width: 80%;
+  }
+
   .menu__ancor {
     font-size: 20px;
   }
@@ -126,7 +130,7 @@
   }
 
   .menu__links {
-    width: 80%;
+    width: 85%;
   }
 
   .menu__ancor {
